@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const app = require('..');
+
+app()
+  .then(() => console.log('Running...'))
+  .catch(err => console.error(err));

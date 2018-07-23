@@ -1,0 +1,48 @@
+{
+  "name": "mysql-events-nats",
+  "description": "Plug MySQL events from binlogs into NATS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/involvestecnologia/mysql-events-nats",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:involvestecnologia/mysql-events-nats.git"
+  },
+  "keywords": [
+    "mysql",
+    "events",
+    "trigger",
+    "notify",
+    "watcher",
+    "nats",
+    "stream",
+    "replication"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "create-env-file": "node bin/create-env-file",
+    "eslint": "eslint . --ext .js",
+    "test": "mocha --exit",
+    "coverage": "nyc --reporter=lcov npm test"
+  },
+  "dependencies": {
+    "@rodrigogs/mysql-events": "^0.3.7",
+    "async": "^2.6.1",
+    "debuggler": "^1.0.0",
+    "dotenv": "^6.0.0",
+    "nats": "^1.0.1",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codeclimate-test-reporter": "^0.5.0",
+    "dotenv-cli": "^1.4.0",
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
+  },
+  "engines": {
+    "node": ">=7.6.0 < 9"
+  }
+}
